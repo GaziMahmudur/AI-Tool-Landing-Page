@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaAI | Think Faster, Create More</title>
+    <meta name="description" content="NexaAI is the ultimate AI-powered workspace for modern teams. Think faster, write smarter, and ship better with our context-aware intelligence.">
+    <meta property="og:title" content="NexaAI - The Future of AI Workspaces">
+    <meta property="og:description" content="Stop starting from blank pages. NexaAI understands your context and generates on demand.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- External Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><span>✦</span> NexaAI</a>
+            
+            <div class="nav-links">
+                <a href="#home">Features</a>
+                <a href="#demo">Demo</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#" class="sign-in">Sign In</a>
+                <button class="btn-primary get-started">Get Started</button>
+            </div>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ─── HERO SECTION ─── -->
+    <section class="hero" id="home">
+        <div class="aurora">
+            <div class="aurora-blob blob-1"></div>
+            <div class="aurora-blob blob-2"></div>
+            <div class="aurora-blob blob-3"></div>
+        </div>
+        <div class="dot-grid"></div>
+
+        <div class="hero-content">
+            <div class="badge badge-gradient">
+                ✦ Introducing NexaAI 2.0 &nbsp; <span style="font-size: 10px;">→</span>
+            </div>
+            <h1>
+                Think Faster.<br>
+                <span class="animated-word" id="word-swap">Write Smarter.</span>
+            </h1>
+            <p class="subheading">
+                NexaAI is the AI-powered workspace that understands context, generates on demand, and learns how you work — so you never start from a blank page again.
+            </p>
+            <div class="hero-ctas">
+                <button class="btn-primary">Start for Free &nbsp; →</button>
+                <button class="btn-secondary">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                        <path d="M10.5 6L2.5 11V1L10.5 6Z"/>
+                    </svg>
+                    Watch Demo
+                </button>
+            </div>
+            <p class="social-proof-micro">
+                Trusted by 40,000+ teams · ★★★★★ 4.9 on Product Hunt
+            </p>
+        </div>
+
+        <div class="hero-visual">
+            <div class="mock-window">
+                <!-- Chat preview inside hero visual -->
+                <div style="padding: 40px; text-align: left;">
+                    <div style="background: rgba(139, 92, 246, 0.1); border-left: 3px solid var(--violet); padding: 20px; border-radius: 8px; max-width: 600px;">
+                        <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;">NexaAI Assistant</p>
+                        <p style="color: white; font-size: 16px;">I've analyzed your project notes. Here's a suggested implementation plan for the new API architecture...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── MARQUEE ─── -->
+    <div class="marquee-section">
+        <div class="marquee-label">Trusted by teams at</div>
+        <div class="marquee-content">
+            <span class="marquee-item">STRIPE</span>
+            <span class="marquee-item">NOTION</span>
+            <span class="marquee-item">FIGMA</span>
+            <span class="marquee-item">SHOPIFY</span>
+            <span class="marquee-item">VERCEL</span>
+            <span class="marquee-item">DISCORD</span>
+            <span class="marquee-item">LINEAR</span>
+            <span class="marquee-item">LOOM</span>
+            <span class="marquee-item">INTERCOM</span>
+            <span class="marquee-item">ZAPIER</span>
+            <span class="marquee-item">RETOOL</span>
+            <!-- Duplicate for loop -->
+            <span class="marquee-item">STRIPE</span>
+            <span class="marquee-item">NOTION</span>
+            <span class="marquee-item">FIGMA</span>
+            <span class="marquee-item">SHOPIFY</span>
+            <span class="marquee-item">VERCEL</span>
+            <span class="marquee-item">DISCORD</span>
+            <span class="marquee-item">LINEAR</span>
+            <span class="marquee-item">LOOM</span>
+            <span class="marquee-item">INTERCOM</span>
+            <span class="marquee-item">ZAPIER</span>
+            <span class="marquee-item">RETOOL</span>
+        </div>
+    </div>
+
+    <!-- ─── DEMO SECTION ─── -->
+    <section class="demo-section" id="demo">
+        <div class="section-header">
+            <h2>See it think.</h2>
+            <p>Type a prompt. Watch NexaAI respond in real time.</p>
+        </div>
+
+        <div class="prompt-chips" id="chips-container">
+            <button class="chip active" data-prompt="Write a product launch email" data-response="Subject: Introducing NexaAI 2.0: Your Workspace, Redefined.\n\nHi [Name],\n\nWe're thrilled to unveil NexaAI 2.0. This update brings context-aware intelligence directly into your workflow, allowing you to generate documentation, code, and strategies in seconds, not hours.">Write a product launch email</button>
+            <button class="chip" data-prompt="Summarize this research paper" data-response="This paper presents a novel approach to large-scale transformer optimization. The researchers demonstrate that by selectively freezing attention heads during fine-tuning, training efficiency increases by 40% without compromising accuracy in complex reasoning tasks.">Summarize this research paper</button>
+            <button class="chip" data-prompt="Generate a landing page copy" data-response="Headline: Build the future, faster.\nSubheadline: NexaAI is the infrastructure for your ideas. From first draft to final deployment, we provide the intelligence you need to ship high-quality products with confidence.">Generate a landing page copy</button>
+            <button class="chip" data-prompt="Explain quantum entanglement simply" data-response="Imagine two magic dice. If you roll one and it shows a six, the other will always show a six, even if it's on the other side of the universe. Quantum entanglement means particles are linked so that one's state instantly determines the other's.">Explain quantum entanglement simply</button>
+            <button class="chip" data-prompt="Debug this Python function" data-response="The error in your function is a classic off-by-one error in the range() function. You're iterating up to len(items) but trying to access items[i+1], which causes an IndexError on the last pass. Try: range(len(items) - 1).">Debug this Python function</button>
+        </div>
+
+        <div class="chat-card">
+            <div class="chat-header">
+                <div class="traffic-lights">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="chat-title">NexaAI Chat</div>
+                <div style="width: 50px;"></div>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message user" id="user-msg">Write a product launch email</div>
+                <div class="thinking" id="thinking-indicator">
+                    NexaAI is thinking <span></span><span></span><span></span>
+                </div>
+                <div class="message ai" id="ai-msg">
+                    <span id="ai-text"></span><span class="typewriter-cursor" id="cursor"></span>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="2">
+                        <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/>
+                    </svg>
+                    <input type="text" placeholder="Ask anything..." id="chat-input">
+                </div>
+                <button class="btn-send" id="send-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FEATURES SECTION ─── -->
+    <section id="features">
+        <div class="section-header">
+            <h2>Everything you need. Nothing you don't.</h2>
+            <p>Built for speed. Designed for humans. Powered by the latest AI.</p>
+        </div>
+
+        <div class="bento-grid">
+            <!-- Card A -->
+            <div class="card col-7">
+                <span class="tag">Core Engine</span>
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9.5 2A2.5 2.5 0 0112 4.5v15a2.5 2.5 0 01-5 0V4.5A2.5 2.5 0 019.5 2z"/>
+                        <path d="M14.5 2A2.5 2.5 0 0117 4.5v15a2.5 2.5 0 01-5 0V4.5A2.5 2.5 0 0114.5 2z"/>
+                    </svg>
+                </div>
+                <h3>Context-Aware Intelligence</h3>
+                <p>NexaAI doesn't just process text; it understands your entire project's context, from style guides to technical requirements.</p>
+                <div class="visual-diagram">
+                    <div class="node"></div>
+                    <div class="line"></div>
+                    <div class="node" style="background: var(--cyan);"></div>
+                    <div class="line"></div>
+                    <div class="node"></div>
+                </div>
+            </div>
+
+            <!-- Card B -->
+            <div class="card col-5">
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                </div>
+                <h3>10x Faster Writing</h3>
+                <div class="stat">10×</div>
+                <p>Draft documentation and communications in seconds. Spend your time refining ideas, not typing them.</p>
+            </div>
+
+            <!-- Card C -->
+            <div class="card col-4">
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="8" rx="2"/>
+                        <rect x="2" y="14" width="20" height="8" rx="2"/>
+                    </svg>
+                </div>
+                <h3>100+ AI Models</h3>
+                <p>Switch between the world's best models instantly for specific tasks.</p>
+                <div class="model-tags">
+                    <span class="model-tag">GPT-4o</span>
+                    <span class="model-tag">Claude 3.5</span>
+                    <span class="model-tag">Gemini Pro</span>
+                    <span class="model-tag">Llama 3</span>
+                </div>
+            </div>
+
+            <!-- Card D -->
+            <div class="card col-4">
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h3>Privacy First</h3>
+                <p>Your data never trains our models. Your intellectual property remains yours.</p>
+                <div class="trust-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M20 6L9 17l-5-5"/>
+                    </svg>
+                    Enterprise Secure
+                </div>
+            </div>
+
+            <!-- Card E -->
+            <div class="card col-4">
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 010 7.75"/>
+                    </svg>
+                </div>
+                <h3>Team Collaboration</h3>
+                <p>Ready for 2 to 2,000 teammates with granular permissions and shared context.</p>
+            </div>
+
+            <!-- Card F -->
+            <div class="card col-5">
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+                    </svg>
+                </div>
+                <h3>API + Integrations</h3>
+                <p>Connect NexaAI to your existing toolstack seamlessly.</p>
+                <div class="integration-badges">
+                    <span class="int-badge">Slack</span>
+                    <span class="int-badge">GitHub</span>
+                    <span class="int-badge">Notion</span>
+                    <span class="int-badge">Zapier</span>
+                </div>
+            </div>
+
+            <!-- Card G -->
+            <div class="card col-7">
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                    </svg>
+                </div>
+                <h3>Built-in Prompt Library</h3>
+                <p>Hundreds of pre-engineered prompts for marketing, coding, and strategy.</p>
+                <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+                    <div style="height: 60px; background: var(--bg-subtle); border-radius: 8px;"></div>
+                    <div style="height: 60px; background: var(--bg-subtle); border-radius: 8px;"></div>
+                    <div style="height: 60px; background: var(--bg-subtle); border-radius: 8px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PRICING SECTION ─── -->
+    <section class="pricing-section" id="pricing">
+        <div class="section-header">
+            <h2>Simple pricing. Serious value.</h2>
+        </div>
+
+        <div class="toggle-container">
+            <span class="toggle-label active-label" id="monthly-label">Monthly</span>
+            <div class="toggle-switch" id="billing-toggle">
+                <div class="toggle-thumb"></div>
+            </div>
+            <span class="toggle-label" id="yearly-label">Yearly</span>
+            <span class="save-badge">Save 20%</span>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Free -->
+            <div class="price-card">
+                <div class="price-name">Starter</div>
+                <div class="price-value">$0<span>/mo</span></div>
+                <p class="price-desc">Perfect for trying out NexaAI.</p>
+                <ul class="feature-list">
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> 50 AI messages/day</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> 1 workspace</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> GPT-3.5 access</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Basic templates</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Community support</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> 2GB storage</li>
+                </ul>
+                <button class="btn-secondary btn-pricing">Get Started Free</button>
+            </div>
+
+            <!-- Pro -->
+            <div class="price-card featured">
+                <div class="featured-badge">Most Popular</div>
+                <div class="price-name">Pro</div>
+                <div class="price-value" id="pro-price" data-monthly="18" data-yearly="14">$18<span>/mo</span></div>
+                <p class="price-desc">For professionals and small teams.</p>
+                <ul class="feature-list">
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Unlimited messages</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> 5 workspaces</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> GPT-4o + Claude access</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> All templates</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Priority support</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> 50GB storage</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Custom AI instructions</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> API access</li>
+                </ul>
+                <button class="btn-primary btn-pricing">Start Free Trial</button>
+                <p class="price-subtext">14-day free trial. No credit card.</p>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="price-card">
+                <div class="price-name">Enterprise</div>
+                <div class="price-value">Custom</div>
+                <p class="price-desc">Scale NexaAI for your entire organization.</p>
+                <ul class="feature-list">
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Everything in Pro</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Unlimited workspaces</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Dedicated models</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> SSO & SAML</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> SLA guarantee</li>
+                    <li class="feature-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Onboarding support</li>
+                </ul>
+                <button class="btn-secondary btn-pricing">Contact Sales</button>
+            </div>
+        </div>
+
+        <button class="comparison-toggle" id="table-toggle">Compare all features &nbsp; ↓</button>
+        <div class="comparison-table-wrapper" id="table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Starter</th>
+                        <th>Pro</th>
+                        <th>Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Daily Messages</td><td>50</td><td>Unlimited</td><td>Unlimited</td></tr>
+                    <tr><td>Base Model</td><td>GPT-3.5</td><td>GPT-4o / Claude</td><td>Custom</td></tr>
+                    <tr><td>Integrations</td><td>—</td><td>Full Suite</td><td>Full Suite</td></tr>
+                    <tr><td>API Access</td><td>—</td><td>1k calls/mo</td><td>Unlimited</td></tr>
+                    <tr><td>Team Roles</td><td>—</td><td>✓</td><td>✓</td></tr>
+                    <tr><td>SSO</td><td>—</td><td>—</td><td>✓</td></tr>
+                    <tr><td>Dedicated Account Manager</td><td>—</td><td>—</td><td>✓</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ─── FAQ SECTION ─── -->
+    <section id="faq">
+        <div class="section-header">
+            <h2>Questions? We've got answers.</h2>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What AI models does NexaAI use?</h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><path d="M19 9l-7 7-7-7"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>NexaAI leverages a multi-model architecture including GPT-4o, Claude 3.5 Sonnet, and Gemini Pro. We automatically route your requests to the best model for the task, or you can manually select your preference.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is my data private and secure?</h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><path d="M19 9l-7 7-7-7"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. We use enterprise-grade encryption and never use your data to train public models. For enterprise customers, we offer on-premise deployment and isolated VPC options.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I use NexaAI for my whole team?</h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><path d="M19 9l-7 7-7-7"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. NexaAI is built for collaboration. You can create shared workspaces, invite team members, and manage permissions with ease.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What happens after my free trial ends?</h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><path d="M19 9l-7 7-7-7"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>You'll be moved to our Starter plan automatically. All your data and projects will remain intact, but you'll have the daily limits of the free tier.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer a student or nonprofit discount?</h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><path d="M19 9l-7 7-7-7"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer 50% off for verified students and non-profit organizations. Please reach out to our support team with your credentials.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I cancel anytime?</h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><path d="M19 9l-7 7-7-7"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, there are no long-term contracts. You can cancel your subscription at any time from your account settings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FINAL CTA ─── -->
+    <section class="final-cta">
+        <div class="cta-banner">
+            <h2>Your AI workspace is one click away.</h2>
+            <p>Join 40,000+ teams already working smarter.</p>
+            <button class="btn-primary">Start for Free — No credit card</button>
+            <div class="cta-trust">
+                <span>🔒 SOC 2 Certified</span>
+                <span>⚡ 99.9% Uptime</span>
+                <span>🔄 Cancel Anytime</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <a href="#" class="logo footer-logo"><span>✦</span> NexaAI</a>
+                <p class="footer-tagline">The future of AI-powered productivity. Built for teams that ship.</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Product</h4>
+                <ul class="footer-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 NexaAI · All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#">X</a>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+</body>
+</html>
